@@ -23,4 +23,12 @@ public class FizzBuzzTest {
         int number = 5;
         assertEquals("Buzz", fizzbuzz.countOff(number));
     }
+
+    @Test
+    void count_off_multiple_of_3_and_5() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        int number = 15;
+        assertEquals("FizzBuzz", fizzbuzz.countOff(number));
+    }
+
 }

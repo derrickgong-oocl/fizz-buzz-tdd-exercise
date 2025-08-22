@@ -1,11 +1,13 @@
 public class FizzBuzz {
 
     public String countOff(int number) {
+        StringBuilder sb = new StringBuilder();
         if (number % 3 == 0) {
-            return "Fizz";
-        } else if (number % 5 == 0) {
-            return "Buzz";
+            sb.append("Fizz");
         }
-        return String.valueOf(number);
+        if (number % 5 == 0){
+            sb.append("Buzz");
+        }
+        return sb.length() == 0 ? String.valueOf(number) : sb.toString();
     }
 }
