@@ -31,4 +31,32 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", fizzbuzz.countOff(number));
     }
 
+    @Test
+    void count_off_multiple_of_3_and_7() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        int number = 21;
+        assertEquals("FizzWhizz", fizzbuzz.countOff(number));
+    }
+
+    @Test
+    void count_off_multiple_of_5_and_7() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        int number = 35;
+        assertEquals("BuzzWhizz", fizzbuzz.countOff(number));
+    }
+
+    @Test
+    void count_off_multiple_of_3_and_5_and_7() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        int number = 105;
+        assertEquals("FizzBuzzWhizz", fizzbuzz.countOff(number));
+    }
+
+    @Test
+    void count_off_multiple_of_7() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        int number = 7;
+        assertEquals("Whizz", fizzbuzz.countOff(number));
+    }
+
 }
